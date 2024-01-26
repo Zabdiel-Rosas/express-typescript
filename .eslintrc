@@ -1,13 +1,14 @@
 {
   "root": true,
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint"],
-  "extends": ["plugin:@shopify/esnext"],
+  "plugins": ["@typescript-eslint", "prettier"],
+  "extends": ["plugin:@shopify/esnext", "prettier"],
   "rules": {
-    "no-console": 0,
+    "no-console": 1,
+    "prettier/prettier": 2
   },
   "env": {
     "browser": true,
-    "node": true,
-  },
+    "node": true
+  }
 }
